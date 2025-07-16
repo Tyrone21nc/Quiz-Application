@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>The Arrow Quiz</h1>
+    <form action="#" id="quiz-form">
+        <div class="container">
+            <div class="q1">            
+                <h3>Who is The Arrow/The Vigilantee?</h3>
+                <label for="TM" ><input id="TM" type="radio" name="question1">Tommy Merlyn</label>
+                <label for="OQ" ><input id="OQ" type="radio" name="question1">Oliver Queen</label>
+                <label for="JD" ><input id="JD" type="radio" name="question1">John Diggle</label>
+                <label for="RP" ><input id="RP" type="radio" name="question1">Ray Palmer</label>
+            </div>
+            <div class="q2">
+                <h3>What is Felicity Smoak's cover job at Queen Consolidated (QC)?</h3>
+                <label for="technician">Felicity Smoak's cover job position at QC is an <input type="textbox" id="technician" required> technician (answer is two letters).</label>
+            </div>
+            <div class="q3">
+                <h3>On the last episode of Season 2 of The Arrow, (S2 E23), Slade Wilson made Oliver choose between Moira Queen and Laurel Lance.</h3>
+                <label for="true"><input id="true" type="radio" name="question3">True</label>
+                <label for="false"><input id="false" type="radio" name="question3">False</label>
+            </div>
+        </div>
+        <button id="sbmt" type="submit">Submit</button>
+    </form>
+
+
+    <h3 id="ans">Answers</h3>
+    <div id="answer">
+        <p id="question1"></p>
+        <p id="question2"></p>
+        <p id="question3"></p>
+    </div>
+    <span id="pts">Points</span>
+    <span id="points">0</span>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
